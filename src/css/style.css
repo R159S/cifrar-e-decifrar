@@ -6,17 +6,38 @@
 
 .m_box {
     position: relative;
-    left: 10px;
-    top: 10px;
+    left: 30px;
+    top: 30px;
+    font-family: sans-serif;
+}
+
+
+#conteudo, #m_cifrada{
+    width: 15rem;
+    padding: 3px;
+}
+
+#botao{
+    padding: 3px;
+    margin-left: 10px;
 }
 
 #cifrado, #decifrado {
-    width: 10%;
-    height: 25px;
+    width: 20rem;
+    height: auto;
     margin: 1px;
     padding: 3px;
+    color: rgb(82, 82, 82);
     border: 1px rgb(184, 184, 184);
     border-style: solid;
     background-color: rgb(228, 228, 228);
     border-radius: 3px;
+}
+
+@media (max-width:600px) {
+    #cifrado, #decifrado {
+        width: 80%;
+       
+    }
+    
 }
