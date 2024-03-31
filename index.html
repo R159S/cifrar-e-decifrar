@@ -9,19 +9,19 @@
 <body>
 
     <div class="m_box">
-        <form id="cifrar">
-            <input type="text" id="conteudo">
-            <input type="submit" value="Encriptar">
+        <form id="cifrar" method="post" action="">
+            <input type="text" id="conteudo" value="Encriptar mensagem">
+            <input id="botao" type="submit" value="Encriptar">
         </form>
         
-        <div id="cifrado"></div>
+        <div id="cifrado">Mensagem criptografada</div>
     
-        <form id="decifrar">
-            <input type="text" id="m_cifrada">
-            <input type="submit" value="Decriptar">
+        <form id="decifrar" method="post" action="">
+            <input type="text" id="m_cifrada" value="Decriptar mensagem">
+            <input id="botao" type="submit" value="Decriptar">
         </form>
         
-        <div id="decifrado"></div>
+        <div id="decifrado">Mensagem Decriptografada</div>
     </div>
     
  
