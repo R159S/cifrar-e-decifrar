@@ -97,7 +97,19 @@ cifrar.addEventListener('click', (e) => {
                 break 
             case "?":
                 frase[cont] = "!"
+                break
+            case ",":
+                frase[cont] = "."
                 break 
+            case ".":
+                frase[cont] = ","
+                break 
+            case ";":
+                frase[cont] = ":"
+                break 
+            case ":":
+                frase[cont] = ";"
+                break  
             default:
                 frase[cont] = "  "
                 break    
@@ -204,6 +216,18 @@ decifrar.addEventListener('click', (e) => {
                 break 
             case "?":
                 frase[cont] = "!"
+                break 
+            case ",":
+                frase[cont] = "."
+                break 
+            case ".":
+                frase[cont] = ","
+                break 
+            case ";":
+                frase[cont] = ":"
+                break 
+            case ":":
+                frase[cont] = ";"
                 break 
             default:
                 frase[cont] = "  "
