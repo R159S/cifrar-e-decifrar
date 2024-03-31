@@ -1,18 +1,14 @@
 const cifrar = document.getElementById("cifrar")
 const cifrado = document.getElementById("cifrado")
-const conteudo = document.getElementById("conteudo").value
 
 const decifrar = document.getElementById("decifrar")
 const decifrado = document.getElementById("decifrado")
-const m_cifrada = document.getElementById("m_cifrada").value
 
-cifrar.addEventListener('submit', (e) => {
+cifrar.addEventListener('click', (e) => {
     e.preventDefault()
+    const conteudo = document.getElementById("conteudo").value
     cont = conteudo.length
     frase = conteudo.split('')
-
-    console.log(conteudo)
-    console.log(cont)
 
     while(cont >= 0){
         
@@ -110,20 +106,16 @@ cifrar.addEventListener('submit', (e) => {
         cont--
     }
 
-
-    console.log(frase)
     cifrado.innerHTML = frase.join("")
     
 })
 
 
-decifrar.addEventListener('submit', (e) => {
+decifrar.addEventListener('click', (e) => {
     e.preventDefault()
+    const m_cifrada = document.getElementById("m_cifrada").value
     cont = m_cifrada.length
     frase = m_cifrada.split('')
-
-    console.log(m_cifrada)
-    console.log(cont)
 
     while(cont >= 0){
         
@@ -221,8 +213,6 @@ decifrar.addEventListener('submit', (e) => {
         cont--
     }
 
-
-    console.log(frase)
     decifrado.innerHTML = frase.join("")
     
 })
