@@ -4,7 +4,25 @@ const cifrado = document.getElementById("cifrado")
 const decifrar = document.getElementById("decifrar")
 const decifrado = document.getElementById("decifrado")
 
-cifrar.addEventListener('click', (e) => {
+const copyBtCf = document.getElementById("copy_cf")
+const copyBtDf = document.getElementById("copy_df")
+
+//copia os resultados gerados na criptografia
+copyBtCf.addEventListener('click', (e) =>{
+    e.preventDefault()
+    resultado = document.getElementById("cifrado").innerText
+    navigator.clipboard.writeText(resultado)
+})
+
+//copia os resultados gerados na decriptografia
+copyBtDf.addEventListener('click', (e) =>{
+    e.preventDefault()
+    resultado = document.getElementById("decifrado").innerText
+    navigator.clipboard.writeText(resultado)
+})
+
+
+cifrar.addEventListener('submit', (e) => {
     e.preventDefault()
     const conteudo = document.getElementById("conteudo").value
     cont = conteudo.length
@@ -123,7 +141,7 @@ cifrar.addEventListener('click', (e) => {
 })
 
 
-decifrar.addEventListener('click', (e) => {
+decifrar.addEventListener('submit', (e) => {
     e.preventDefault()
     const m_cifrada = document.getElementById("m_cifrada").value
     cont = m_cifrada.length

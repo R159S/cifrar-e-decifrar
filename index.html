@@ -7,24 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-
-    <div class="m_box">
-        <form id="cifrar" method="post" action="">
-            <input type="text" id="conteudo" value="Encriptar mensagem">
-            <input id="botao" type="submit" value="Encriptar">
-        </form>
-        
-        <div id="cifrado">Mensagem criptografada</div>
-    
-        <form id="decifrar" method="post" action="">
-            <input type="text" id="m_cifrada" value="Decriptar mensagem">
-            <input id="botao" type="submit" value="Decriptar">
-        </form>
-        
-        <div id="decifrado">Mensagem Decriptografada</div>
-    </div>
-    
- 
+    <main>
+        <div class="m_box">
+            <div class="box""">
+                <form id="cifrar" method="post" action="">
+                    <input type="text" id="conteudo" value="Encriptar mensagem">
+                    <input id="botao" type="submit" value="Encriptar">
+                </form>
+                
+                <div class="result_container"><div id="cifrado" value="r_cifrado">Mensagem criptografada</div><img id="copy_cf" src="./src/image/CopyIcon.png" alt=""></div>
+            
+                <form id="decifrar" method="post" action="">
+                    <input type="text" id="m_cifrada" value="Decriptar mensagem">
+                    <input id="botao" type="submit" value="Decriptar">
+                </form>
+                
+                <div class="result_container"><div id="decifrado">Mensagem Decriptografada</div><img id="copy_df" src="./src/image/CopyIcon.png" alt=""></div>
+            </div>
+        </div>
+    </main>
 <script src="./src/javascript/index.js"></script>
 </body>
 </html>
